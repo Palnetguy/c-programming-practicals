@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+
+#define INTEREST_RATE 0.05
+#define DISCOUNT_PERCENTAGE 15
+#define UGX_PER_USD 3500
+#define BONUS_PERCENTAGE 10
+#define TAX_RATE 0.18
+
+
+int main(){
+    float principal = 10000, time = 2;
+    float simple_interest = principal * time * INTEREST_RATE;
+    printf("Simple Interest: UGX %.2f\n", simple_interest);
+}
