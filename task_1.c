@@ -1,5 +1,8 @@
-#include<stdio.h>
-int main() {
-    printf("Hello, World!\n");
-    return 0;
+#include <stdio.h>
+
+int main(){
+    int age = 20;
+    float height = 5.9;
+    double distance = 12345.6789;
+    char initial = 'A';
 }
