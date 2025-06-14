@@ -17,6 +17,16 @@ int main() {
     float commision = sales_volume * (commision_rate / 100);
     printf("Commision: %.2f\n\n", commision);
 
+    float asset_cost, residual_value, useful_life;
+    printf("Enter asset cost: ");
+    scanf("%f", &asset_cost);
+    printf("Enter residual value: ");
+    scanf("%f", &residual_value);
+    printf("Enter useful life (years): ");
+    scanf("%f", &useful_life);
+    float depreciation = (asset_cost - residual_value) / useful_life;
+    printf("Depreciation: %.2f\n\n", depreciation);
+
     return 0;
 
 }
