@@ -16,4 +16,8 @@ int main(){
     float price = 50000;
     float discounted_price = price - (DISCOUNT_PERCENTAGE / 100.0 * price);
     printf("Discounted Price: UGX %.2f\n", discounted_price);
+
+    int usd = 700;
+    long ugx = usd * UGX_PER_USD;
+    printf("%d USD = %ld UGX\n", usd, ugx);
 }
