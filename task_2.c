@@ -12,4 +12,8 @@ int main(){
     float principal = 10000, time = 2;
     float simple_interest = principal * time * INTEREST_RATE;
     printf("Simple Interest: UGX %.2f\n", simple_interest);
+
+    float price = 50000;
+    float discounted_price = price - (DISCOUNT_PERCENTAGE / 100.0 * price);
+    printf("Discounted Price: UGX %.2f\n", discounted_price);
 }
