@@ -27,6 +27,14 @@ int main() {
     float depreciation = (asset_cost - residual_value) / useful_life;
     printf("Depreciation: %.2f\n\n", depreciation);
 
+    float hourly_wage, hours_per_week;
+    printf("Enter hourly wage: ");
+    scanf("%f", &hourly_wage);
+    printf("Enter hours per week: ");
+    scanf("%f", &hours_per_week);
+    float annual_salary = hourly_wage * hours_per_week * 52; //52 weeks in a year
+    printf("Salary: %.2f\n\n", annual_salary);
+
     return 0;
 
 }
