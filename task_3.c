@@ -10,6 +10,18 @@ int main() {
     }
     printf("Final Amount: UGX %.2f\n\n", purchase_amount);
 
+    // No. 2: Employee bonus for >5 years of service
+    int years_of_service;
+    float basic_salary;
+    printf("Enter years of service: ");
+    scanf("%d", &years_of_service);
+    printf("Enter basic salary (UGX): ");
+    scanf("%f", &basic_salary);
+    if (years_of_service > 5) {
+        basic_salary *= 1.05; // 5% bonus
+    }
+    printf("Final Salary: UGX %.2f\n\n", basic_salary);
+
 
     return 0;
 }
