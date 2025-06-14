@@ -70,6 +70,60 @@ float calculateDepreciation() {
 }
 
 
+void printDiscountedPrice(float price, float discount) {
+    printf("Discounted Price: UGX %.2f\n", price - (price * discount));
+}
+
+void printTaxAmount(float price, float tax_rate) {
+    printf("Tax Amount: UGX %.2f\n", price * tax_rate);
+}
+
+void printSalaryWithBonus(float salary, float bonus_percent) {
+    printf("Total Salary: UGX %.2f\n", salary * (1 + bonus_percent));
+}
+
+void printProfitOrLoss(float cost_price, float selling_price) {
+    if (selling_price > cost_price) {
+        printf("Profit\n");
+    } else {
+        printf("Loss\n");
+    }
+}
+
+void printConditionalDiscount(float price, float discount) {
+    if (discount > 0.20) {
+        printf("Discounted Price: UGX %.2f\n", price * (1 - discount));
+    } else {
+        printf("Discount too small\n");
+    }
+}
+
+void printDoublingYears(float rate) {
+    printf("Years to double: %.1f\n", 72 / (rate * 100)); // Rule of 72
+}
+
+void printTotalExpenses(int items, float price) {
+    printf("Total Expenses: UGX %.2f\n", items * price);
+}
+
+void printTaxPercentage(float salary) {
+    if (salary < 3000000) {
+        printf("Tax Rate: 10%%\n");
+    } else if (salary <= 7000000) {
+        printf("Tax Rate: 15%%\n");
+    } else {
+        printf("Tax Rate: 20%%\n");
+    }
+}
+
+void printOverdueFees(int days, float daily_fee) {
+    printf("Overdue Fees: UGX %.2f\n", days * daily_fee);
+}
+
+void printMaxDiscount(float price, float discount) {
+    printf("Maximum Discount: UGX %.2f\n", price * discount);
+}
+
 int main() {
     printf("1. Sale Price: UGX %.2f\n", calculateSalePrice());
     printf("2. Salary After Tax: UGX %.2f\n", calculateSalaryAfterTax());
@@ -81,6 +135,18 @@ int main() {
     printf("8. Flat Interest: UGX %.2f\n", calculateFlatInterest());
     printf("9. Profit Margin: %.2f%%\n", calculateProfitMargin());
     printf("10. Annual Depreciation: UGX %.2f\n\n", calculateDepreciation());
+
+  
+    printDiscountedPrice(200000, 0.10);
+    printTaxAmount(5000000, 0.15);
+    printSalaryWithBonus(5000000, 0.05);
+    printProfitOrLoss(9000000, 15000000);
+    printConditionalDiscount(200000, 0.25);
+    printDoublingYears(0.08);
+    printTotalExpenses(100, 50000);
+    printTaxPercentage(4500000);
+    printOverdueFees(30, 5000);
+    printMaxDiscount(200000, 0.30);
 
     return 0;
 }
