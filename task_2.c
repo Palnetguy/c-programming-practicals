@@ -20,4 +20,9 @@ int main(){
     int usd = 700;
     long ugx = usd * UGX_PER_USD;
     printf("%d USD = %ld UGX\n", usd, ugx);
+
+    float salary = 250000;
+    float bonus = salary * (BONUS_PERCENTAGE / 100.0);
+    printf("Bonus: UGX %.2f\n", bonus);
+
 }
