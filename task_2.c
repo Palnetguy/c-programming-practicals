@@ -25,4 +25,10 @@ int main(){
     float bonus = salary * (BONUS_PERCENTAGE / 100.0);
     printf("Bonus: UGX %.2f\n", bonus);
 
+    float product_price = 30000;
+    float total_cost = product_price + (TAX_RATE * product_price);
+    printf("Total Cost (incl. Tax): UGX %.2f\n", total_cost);
+
+    return 0;
+
 }
