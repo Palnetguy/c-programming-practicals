@@ -35,6 +35,16 @@ int main() {
     float annual_salary = hourly_wage * hours_per_week * 52; //52 weeks in a year
     printf("Salary: %.2f\n\n", annual_salary);
 
+    float customer1, customer2, customer3;
+    printf("Enter spending for customer 1: ");
+    scanf("%f", &customer1);
+    printf("Enter spending for customer 2: ");
+    scanf("%f", &customer2);    
+    printf("Enter spending for customer 3: ");
+    scanf("%f", &customer3);
+    float total_revenue = customer1 + customer2 + customer3;
+    printf("Total Revenue: UGX %.2f\n", total_revenue);
+
     return 0;
 
 }
